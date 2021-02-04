@@ -116,28 +116,7 @@ public class WindowController implements Initializable {
         /////////////////////
         
         
-        ///             GENEROWANIE DANYCH              ///
-        /*
-        carShowroomContainer.addCenter("Salon1", 10,"Kraków");
-        carShowroomContainer.addCenter("Salon2", 10,"Kraków");
-        carShowroomContainer.addCenter("Salon3", 100,"Warszawa");
-        
-        carShowroomContainer.getCarDealers().get("Salon1").addProduct(new Vechicle("BMW","120i",ItemCondition.USED,2500.0,2005,2000.0,true,150000,"Niemiec plakal jak sprzedawal"));
-        carShowroomContainer.getCarDealers().get("Salon1").addProduct(new Vechicle("Mercedes-Benz","W201",ItemCondition.USED,2500.0,1999,3000.0,false,240000,"tel. 555 555 555"));
-        carShowroomContainer.getCarDealers().get("Salon1").addProduct(new Vechicle("BMW","120i",ItemCondition.USED,3000.0,2005,2000.0,true,150000,"Niemiec plakal jak sprzedawal"));
-        carShowroomContainer.getCarDealers().get("Salon1").addProduct(new Vechicle("BMW","320i",ItemCondition.USED,25000.0,2015,2000.0,false,150000,"Komentarz"));
-        carShowroomContainer.getCarDealers().get("Salon1").addProduct(new Vechicle("Mercedes-Benz","W123",ItemCondition.USED,5000.0,1973,3000.0,false,240000,"tel. 555 555 555"));
-        carShowroomContainer.getCarDealers().get("Salon1").addProduct(new Vechicle("BMW","320i",ItemCondition.USED,25000.0,2015,2000.0,false,150000,"Komentarz"));
-
-        
-        carShowroomContainer.getCarDealers().get("Salon2").addProduct(new Vechicle("BMW","120i",ItemCondition.USED,2500.0,2005,2000.0,false,900000,"jak nie sprzeda si edo czwartku oddam na żyletki"));
-        carShowroomContainer.getCarDealers().get("Salon2").addProduct(new Vechicle("Mazda","3",ItemCondition.NEW,75000.0,2020,1900.0,false,0,"tani i oszczedny"));
-
-        carShowroomContainer.getCarDealers().get("Salon3").addProduct(new Vechicle("BMW","120i",ItemCondition.USED,2500.0,2005,2000.0,false,70000,"nie odpisuje na sms \ntelefon: 832 234 211"));
-        carShowroomContainer.getCarDealers().get("Salon3").addProduct(new Vechicle("Fiat","Panda",ItemCondition.DAMAGED,500.0,2010,1300.0,false,35000,"nie odpisuje na sms \ntelefon: 832 234 211"));
-        carShowroomContainer.getCarDealers().get("Salon3").addProduct(new Vechicle("Toyota","GT-86",ItemCondition.USED,54000.0,2018,2000.0,false,57000,"nie odpisuje na sms \ntelefon: 832 234 211"));
-        carShowroomContainer.getCarDealers().get("Salon3").addProduct(new Vechicle("Toyota","Yaris",ItemCondition.NEW,32000.0,2019,1400.0,false,57000,"nie odpisuje na sms \ntelefon: 832 234 211"));
-
+       
         
         //SERIALIZATION
         
@@ -445,87 +424,7 @@ public class WindowController implements Initializable {
           }
         });
         
-        /*
-        MarkaColumn.setCellValueFactory(new Callback<CellDataFeatures<TableVechicle,String>, ObservableValue<String>>(){
-            @Override
-            public ObservableValue<String> call(CellDataFeatures<TableVechicle, String> p) {
-                return p.getValue().getMarka();
-                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-            
-        });
-        ModelColumn.setCellValueFactory(new Callback<CellDataFeatures<TableVechicle,String>, ObservableValue<String>>(){
-            @Override
-            public ObservableValue<String> call(CellDataFeatures<TableVechicle, String> p) {
-                return p.getValue().getModel();
-                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-            
-        });
-        KondycjaColumn.setCellValueFactory(new Callback<CellDataFeatures<TableVechicle,String>, ObservableValue<String>>(){
-            @Override
-            public ObservableValue<String> call(CellDataFeatures<TableVechicle, String> p) {
-                return p.getValue().getItemCondition();
-                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-            
-        });
-        IloscColumn.setCellValueFactory(new Callback<CellDataFeatures<TableVechicle,String>, ObservableValue<String>>(){
-            @Override
-            public ObservableValue<String> call(CellDataFeatures<TableVechicle, String> p) {
-                return String.valueOf(p) p.getValue().getIlosc();
-                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-            
-        });
-        CenaColumn.setCellValueFactory(new Callback<CellDataFeatures<TableVechicle,String>, ObservableValue<String>>(){
-            @Override
-            public ObservableValue<String> call(CellDataFeatures<TableVechicle, String> p) {
-                return p.getValue().getCena().asString();
-                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-            
-        });
-        RokProdukcjiColumn.setCellValueFactory(new Callback<CellDataFeatures<TableVechicle,String>, ObservableValue<String>>(){
-            @Override
-            public ObservableValue<String> call(CellDataFeatures<TableVechicle, String> p) {
-                return p.getValue().getRokProdukcji().asString();
-                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-            
-        });
-        PojemnoscSilnikaColumn.setCellValueFactory(new Callback<CellDataFeatures<TableVechicle,String>, ObservableValue<String>>(){
-            @Override
-            public ObservableValue<String> call(CellDataFeatures<TableVechicle, String> p) {
-                return p.getValue().getPojemnoscSilnika().asString();
-                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-            
-        });*/
-        
-        //CarTable.getItems().add(new TableVechicle("marka","model"));
-        
-       // CarTable.getColumns().setAll(MarkaColumn,ModelColumn,KondycjaColumn,IloscColumn, CenaColumn, RokProdukcjiColumn,PojemnoscSilnikaColumn);
-        //carsList = new SimpleListProperty<>();
        
-        //carsList.add(new TableVechicle(new SimpleStringProperty("Suzuki"),new SimpleStringProperty("Jimny")));
-        
-        
-        /*
-        carsList.addListener(new ListChangeListener<Vechicle>(){
-            @Override
-            public void onChanged(ListChangeListener.Change<? extends Vechicle> change) {
-                //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-            
-        });
-*/
-        //CarTable.getItems().add(new TableVechicle(new SimpleStringProperty("Suzuki"),new SimpleStringProperty("Jimny")));
-        
-        ///////////////////////////////////
-        
-        
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
